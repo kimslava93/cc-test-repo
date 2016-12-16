@@ -2,5 +2,5 @@ variables:
     DUMMY_VARIABLE:
         description: some dummy variable
         required: false
-        type: string
+        type: int
         default:
