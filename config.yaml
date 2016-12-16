@@ -4,3 +4,4 @@ variables:
     required: false
     type: string
     default:
+      - no
