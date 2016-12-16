@@ -5,3 +5,11 @@ variables:
     type: string
     default:
       - "nooo"
+  AUDIT_AWS_EC2_REGIONS:
+      description: list of AWS regions to check. Default is all regions
+      required: true
+      type: array
+      default:
+          - us-east-1
+          - us-west-1
+          - us-west-2
