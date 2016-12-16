@@ -10,11 +10,9 @@
 ##   internet_gateway true
 ## end
 ##
-
 coreo_aws_advisor_alert "slava" do
   action :define
   service :elb
-  #include_violations_in_count false
   display_name "Slava Object"
   objectives ["load_balancers"]
   description "Test config in CC"
