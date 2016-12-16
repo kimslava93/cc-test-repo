@@ -1,6 +1,7 @@
 variables:
-  DUMMY_VAR:
-    description: "test"
+  DUMMY_VARIABLE:
+    description: some dummy variable
     required: false
     type: string
     default:
+      - "nooo"
