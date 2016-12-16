@@ -1,6 +1,6 @@
 variables:
-    DUMMY_VARIABLE:
-        description: some dummy variable
+    NEW_PARAM4:
         required: false
-        type: int
+        description: fake var
+        type: string
         default:
