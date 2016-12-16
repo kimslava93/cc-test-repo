@@ -1,6 +1,6 @@
 variables:
-  NEW_PARAM4:
+  DUMMY_VAR:
+    description: "test"
     required: false
-    description: fake var
     type: string
     default:
