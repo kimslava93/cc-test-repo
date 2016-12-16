@@ -16,4 +16,3 @@ variables:
     required: false
     type: string
     default:
-      - nooo
