@@ -10,16 +10,16 @@
 ##   internet_gateway true
 ## end
 ##
-coreo_aws_advisor_alert "slava" do
+coreo_aws_advisor_alert "elb-inventory" do
   action :define
   service :elb
   #include_violations_in_count false
-  display_name "Slava Object"
+  display_name "ELB Object Health Check"
+  description "Load balancer health check is greater then 2 min."
+  category "Inventory"
+  suggested_action "None."
+  level "Informational"
   objectives ["load_balancers"]
-  description "Test config in CC"
-  category "CustomCategory"
-  suggested_action "Keep going"
-  level "Warning"
   audit_objects ["load_balancer_descriptions.health_check.interval"]
   operators [">"]
   alert_when [120]
