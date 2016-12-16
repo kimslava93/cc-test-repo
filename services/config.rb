@@ -19,7 +19,7 @@ coreo_aws_advisor_alert "slava" do
   description "Test config in CC"
   category "CustomCategory"
   suggested_action "Keep going"
-  level "warning"
+  level "Warning"
   audit_objects ["load_balancer_descriptions.health_check.interval"]
   operators [">"]
   alert_when [120]
