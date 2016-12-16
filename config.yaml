@@ -10,3 +10,10 @@
 ##   internet_gateway true
 ## end
 ##
+variables:
+  DUMMY_VARIABLE:
+    description: some dummy variable
+    required: false
+    type: string
+    default:
+      - nooo
