@@ -13,7 +13,7 @@
 coreo_aws_advisor_alert "slava-alert-init" do
   action :define
   service :elb
-  display_name "Slava Object"
+  display_name "${AWS_LINUX_AMI}"
   objectives ["load_balancers"]
   description "Test config in CC"
   category "CustomCategory"
