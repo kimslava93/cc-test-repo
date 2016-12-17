@@ -23,7 +23,7 @@ coreo_aws_advisor_alert "slava-alert-init" do
   operators [">"]
   alert_when [120]
 end
-coreo_aws_advisor_ec2 "advise-ec2" do
+coreo_aws_advisor_elb "advise-ec2" do
   action :advise
   regions ${AUDIT_AWS_EC2_REGIONS}
   alerts ["slava-alert-init"]
