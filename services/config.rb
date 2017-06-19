@@ -10,21 +10,21 @@
 ##   internet_gateway true
 ## end
 ##
-coreo_aws_advisor_alert "slava-alert-init" do
-  action :define
-  service :elb
-  display_name "${AWS_LINUX_AMI}"
-  objectives ["load_balancers"]
-  description "Test config in CC"
-  category "CustomCategory"
-  suggested_action "Keep going"
-  level "warning"
-  audit_objects ["load_balancer_descriptions.health_check.interval"]
-  operators [">"]
-  alert_when [120]
-end
-coreo_aws_advisor_elb "advise-ec2" do
-  action :advise
-  regions ${AUDIT_AWS_EC2_REGIONS}
-  alerts ["slava-alert-init"]
-end
+# coreo_aws_advisor_alert "slava-alert-init" do
+#   action :define
+#   service :elb
+#   display_name "${AWS_LINUX_AMI}"
+#   objectives ["load_balancers"]
+#   description "Test config in CC"
+#   category "CustomCategory"
+#   suggested_action "Keep going"
+#   level "warning"
+#   audit_objects ["load_balancer_descriptions.health_check.interval"]
+#   operators [">"]
+#   alert_when [120]
+# end
+# coreo_aws_advisor_elb "advise-ec2" do
+#   action :advise
+#   regions ${AUDIT_AWS_EC2_REGIONS}
+#   alerts ["slava-alert-init"]
+# end
